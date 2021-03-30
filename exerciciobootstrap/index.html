@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Meu CV - Gabriel Rulo</title>
+    <style>
+        body {
+            margin: 0;
+            font-size: 20px;
+            background-color: rgba(255, 255, 255, 0.623);
+        }
+
+        .text {
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            text-align: left;
+        }
+
+        img {
+            align-self: end;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+    1) Gridsystem Responsivo - ok
+    2) Card com sua foto - ok
+    3) Tabela listrada com dados dos seus empregos anteriores - OK
+    4) Carousel de fotos com as fotos de seu hobie preferido completo. Controles, indicadores títulos e subtítulos - OK
+    5) Formulário para entrar em contato com vc - 
+    -->
+    <main class="principal">
+        <div class="col-12 mt-2 border">
+
+            <div class="row justify-content-start my-2">
+                <div class="col-12 border text-start">
+                    <h1 class="text-center mb-3">
+                        Curriculum Vitae - Gabriel Santos Rulo <br />
+                        <br /><img src="imgs/gabriel.rulo.jpg" width="400px" height="400px" />
+                    </h1>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-4 col-lg-4 mt-2 border">
+                            <b>E-mail:</b> gabriel@email.com
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-4 mt-2 border">
+                            <b>Telefone:</b> 98987-7014
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-4 mt-2 border">
+                            <b>Endereço:</b> Av. Principal
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-start my-2">
+                <div class="col-12 border text-start">
+                    <a class="text"><b>Objetivos:</b></a>
+                    <br />
+                    <a class="text">Tenho interesse em ingressar na área de desenvolvimento como
+                        programador júnior. Pode participar de alguns projetos na
+                        faculdade com a função de Back-End, além de realizar atividades
+                        ligada ao Front.</a>
+                </div>
+            </div>
+
+            <div class="row justify-content-start my-2">
+                <div class="col-12 border text-start">
+                    <a class="text"> <b>Experiências Profissionais:</b></a>
+                    <br />
+                    <div class="row justify-content-start my-2">
+                        <table class="table table-bordered table-striped table-hover">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Empresa</th>
+                                    <th>Cargo</th>
+                                    <th>Periodo</th>
+                                    <th>Descrição</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Nova Affinity</td>
+                                    <td>Coordenador Financeiro</td>
+                                    <td>Junho/2020 - Atual</td>
+                                    <td>Responsável por coordenar o setor financeiro, gerenciamento da equipe, demandas,
+                                        atividades e desenvolvimento de melhorias nos processos internos.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Nova Affinity</td>
+                                    <td>Assistente Financeiro</td>
+                                    <td>Junho/2017 até Junho/2020</td>
+                                    <td>
+                                        Responsável pela demanda de comissionamento, desde a baixa
+                                        dos recebimentos até o pagamento efetivo para o corretor.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row justify-content-start my-2">
+                        <div class="col-12 text-center">
+                            <a class="text">
+                                <b>Linguagens de programação que possuo conhecimento:</b></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8 m-auto active">
+                            <div id="carousel1" class="carousel slide mb-4" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li class="active" data-target="#carousel1" data-slide-to="0"></li>
+                                    <li data-target="#carousel1" data-slide-to="1"></li>
+                                    <li data-target="#carousel1" data-slide-to="2"></li>
+                                    <li data-target="#carousel1" data-slide-to="3"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <a href="#carousel1" class="carousel-control-prev" data-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </a>
+
+                                    <div class="carousel-item active">
+                                        <img src="imgs/java2.jpg" width="740px" height="600px" alt="Slide 1" />
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h3>Java</h3>
+                                            <p>Lorem ipsum dolor sit.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src="imgs/html.jpg" width="740px" height="600px" alt="Slide 2" />
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h3>CSS & HTML</h3>
+                                            <p>Lorem ipsum dolor sit.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imgs/sql.png" width="740px" height="600px" alt="Slide 3" />
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h3>SQL</h3>
+                                            <p>Lorem ipsum dolor sit.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imgs/boot.jpg" width="740px" height="540px" alt="Slide 4" />
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h3>BootStrap</h3>
+                                            <p>Lorem ipsum dolor sit.</p>
+                                        </div>
+                                    </div>
+
+                                    <!--Controle do carousel (para frente)-->
+                                    <a href="#carousel1" class="carousel-control-next" data-slide="next"><span
+                                            class="carousel-control-next-icon"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-start my-2">
+                <div class="col-12 border text-start">
+                    <br>
+                    <a class="text-center"><b>Fale Comigo:</b></a>
+                    <br>
+                    <br>
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Digite seu nome"> 
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
+                    </div>
+                    <div class="form-group">
+                        <label for="nome">Deixe sua mensagem:</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Estou a disposição, deixe sua mensagem">
+                    </div>
+                    <div class="row align-items-center border bg-light my-2" style="height: 80px;">
+                        <div class="col border"><a href="" class="btn btn-success btn-block">Enviar</a></div>
+                        <div class="col border"><a href="" class="btn btn-danger btn-block">Limpar</a></div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
